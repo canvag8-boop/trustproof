@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production build artifacts
+frontend/dist/
+dist/
+build/
+
+# Python Virtualenv & Cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local databases
+backend/trustproof.db
+*.db
+*.sqlite3
+
+# Environment secrets
+.env
+.env.local
+
+# Hardhat compilation artifacts
+artifacts/
+cache/
+
+# OS and IDE files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
