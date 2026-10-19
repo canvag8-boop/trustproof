@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: trustproof-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: TINYFISH_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
